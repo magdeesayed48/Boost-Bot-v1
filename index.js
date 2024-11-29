@@ -1,9 +1,22 @@
+const express = require("express")
+const app = express();
+var listener = app.listen(process.env.PORT || 2000, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
+app.listen(() => console.log("I'm Ready To Work..! 24H"));
+app.get('/', (req, res) => {
+  res.send(`
+  <body>
+  <center><h1>Bot 24H ON!</h1></center
+  </body>`)
+});
+
 const { Client } = require('discord.js')
 const Slef = require('discord.js-selfbot-v13-fork');
 const client = new Client({ intents: 131071, partials: [1, 2, 5, 3, 4, 6, 0] });
 const clients = new Slef.Client({ checkUpdate: false, intents: 131071, partials: [1, 2, 5, 3, 4, 6, 0] });
-client.login('') // توكن البوت
-clients.login("") // توكن حساب
+client.login(process.env.token) // توكن البوت
+clients.login(process.env.usertoken) // توكن حساب
 
 const humanizeDuration = require('humanize-duration');
 client.setMaxListeners(99999999999)
