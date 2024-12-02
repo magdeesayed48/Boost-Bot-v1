@@ -1,18 +1,22 @@
 {
-  "name": "l",
+  "name": "discord-boost-bot",
   "version": "1.0.0",
+  "description": "A Discord bot to manage boosts and display badges.",
   "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "canvas": "^2.11.2",
-    "canvas-constructor": "^7.0.1",
-    "discord.js": "^13.17.1",
-    "humanize-duration": "^3.31.0",
-    "moment": "^2.30.1",
-    "dotenv": "^16.4.5",
-    "express": "^4.18.2",
-    "ms": "^2.1.3",
-    "node-fetch": "^3.3.2",
-    "parse-ms": "^2.1.0"
-  }
+    "discord.js": "^14.11.0",
+    "discord.js-selfbot-v13-fork": "^1.0.0",
+    "canvas-constructor": "^1.1.0",
+    "humanize-duration": "^3.27.0",
+    "parse-ms": "^2.1.0",
+    "ms": "^2.1.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Your Name",
+  "license": "ISC"
 }
