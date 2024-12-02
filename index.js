@@ -15,8 +15,8 @@ const { Client } = require('discord.js')
 const Slef = require('discord.js-selfbot-v13-fork');
 const client = new Client({ intents: 131071, partials: [1, 2, 5, 3, 4, 6, 0] });
 const clients = new Slef.Client({ checkUpdate: false, intents: 131071, partials: [1, 2, 5, 3, 4, 6, 0] });
-client.login(process.env.token) // توكن البوت
-clients.login(process.env.usertoken) // توكن حساب
+client.login("MTMxMTk3MzI1NjQxMjAwODQ4MA.GunG1u.lxurVoK8zGjaJ9lmS6nGpksSC8MJ8ZPm6W7s5s") // توكن البوت
+clients.login("MTIwMTQwODMyMDk3MjUzMzg4MA.GWwCdt.zIfv48-0NMUhzvDMpMnxRVNoVlnDTmToPI1lFI") // توكن حساب
 
 const humanizeDuration = require('humanize-duration');
 client.setMaxListeners(99999999999)
